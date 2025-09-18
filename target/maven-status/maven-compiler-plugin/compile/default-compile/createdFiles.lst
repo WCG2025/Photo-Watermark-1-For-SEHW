@@ -1,0 +1,6 @@
+nju\edu\cn\watermark\PhotoWatermarkTool.class
+nju\edu\cn\watermark\PhotoWatermarkTool$ProcessResult.class
+nju\edu\cn\watermark\CommandLineOptions.class
+nju\edu\cn\watermark\WatermarkRenderer.class
+nju\edu\cn\watermark\ExifReader.class
+nju\edu\cn\watermark\WatermarkRenderer$WatermarkPosition.class
