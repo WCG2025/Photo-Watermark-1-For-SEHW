@@ -1,7 +1,27 @@
 @echo off
 echo ========================================
-echo 图片水印工具 - 构建脚本
+echo 图片水印工具 - 构建脚本 (JDK21)
 echo ========================================
+
+echo.
+echo 检查Java版本...
+java -version
+if errorlevel 1 (
+    echo 错误: 未找到Java环境！
+    echo 请确保已安装JDK21并配置环境变量。
+    pause
+    exit /b 1
+)
+
+echo.
+echo 检查Maven版本...
+call mvn -version
+if errorlevel 1 (
+    echo 错误: 未找到Maven！
+    echo 请确保已安装Maven 3.9.0+并配置环境变量。
+    pause
+    exit /b 1
+)
 
 echo.
 echo 正在编译项目...

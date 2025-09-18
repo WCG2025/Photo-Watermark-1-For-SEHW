@@ -14,8 +14,8 @@
 ## 快速开始
 
 ### 环境要求
-- Java 11 或更高版本
-- Maven 3.6+（用于编译）
+- **Java 21** 或更高版本
+- **Maven 3.9.0+**（用于编译）
 
 ### 编译项目
 
@@ -51,9 +51,11 @@ Photo-Watermark-1-For-SEHW/
 │   ├── ExifReader.java              # EXIF信息读取器
 │   ├── WatermarkRenderer.java       # 水印渲染器
 │   └── CommandLineOptions.java     # 命令行参数解析
-├── pom.xml                          # Maven配置文件
+├── pom.xml                          # Maven配置文件 (JDK21)
 ├── build.bat                        # Windows构建脚本
 ├── build.sh                         # Linux/Mac构建脚本
+├── test-jdk21.bat                   # JDK21兼容性测试脚本
+├── JDK21编译说明.md                 # JDK21专用编译指南
 ├── 运行文档.md                      # 详细使用文档
 ├── 快速开始.md                      # 快速开始指南
 └── README.md                        # 项目说明
@@ -63,15 +65,16 @@ Photo-Watermark-1-For-SEHW/
 
 - [快速开始.md](快速开始.md) - 快速开始指南
 - [运行文档.md](运行文档.md) - 详细的使用文档和API说明
+- [JDK21编译说明.md](JDK21编译说明.md) - JDK21专用编译指南和问题解决
 
 ## 开发信息
 
-- **开发语言**: Java 11
-- **构建工具**: Maven
+- **开发语言**: Java 21
+- **构建工具**: Maven 3.9.0+
 - **包名**: nju.edu.cn.watermark
 - **主要依赖**:
-  - Metadata Extractor (EXIF读取)
-  - Apache Commons CLI (命令行解析)
+  - Metadata Extractor 2.19.0 (EXIF读取)
+  - Apache Commons CLI 1.5.0 (命令行解析)
 
 ## 许可证
 

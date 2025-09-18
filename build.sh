@@ -1,8 +1,26 @@
 #!/bin/bash
 
 echo "========================================"
-echo "图片水印工具 - 构建脚本"
+echo "图片水印工具 - 构建脚本 (JDK21)"
 echo "========================================"
+
+echo
+echo "检查Java版本..."
+java -version
+if [ $? -ne 0 ]; then
+    echo "错误: 未找到Java环境！"
+    echo "请确保已安装JDK21并配置环境变量。"
+    exit 1
+fi
+
+echo
+echo "检查Maven版本..."
+mvn -version
+if [ $? -ne 0 ]; then
+    echo "错误: 未找到Maven！"
+    echo "请确保已安装Maven 3.9.0+并配置环境变量。"
+    exit 1
+fi
 
 echo
 echo "正在编译项目..."
